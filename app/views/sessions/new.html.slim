@@ -1,0 +1,13 @@
+h1 ログイン
+
+= form_with scope: :session, local: true do |f|
+    /メールアドレス入力フォームの実装
+    .form-group
+        = f.label :email, 'メールアドレス'
+        = f.text_field :email, class: 'form-control', id: 'session_email'
+    /パスワード入力フォームの実装
+    .form-group
+        = f.label :password, 'パスワード'
+        = f.password_field :password, class: 'form-control', id: 'session_password'
+    /ログインボタンの実装
+    = f.submit 'ログインする', class: 'btn btn-primary'

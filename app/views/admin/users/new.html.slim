@@ -1,0 +1,10 @@
+h1 ユーザー登録
+
+.nav.justify-content-end 
+    = link_to '一覧', admin_users_path, class: 'nav-link'
+
+//_form.html.slimファイルからrenderする
+= render partial: 'form', locals: { user: @user}
+
+
+
